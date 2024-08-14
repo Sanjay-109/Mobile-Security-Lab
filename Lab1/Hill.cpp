@@ -119,7 +119,9 @@ string HillDecipher(string cipher, string key) {
 }
 
 int main() {
-    string message = "Celest";
+    string message;
+	cout << "Enter Text: (Length multiple of 3)" << endl;
+	getline(cin, message);
     string key = "GYBNQKURP";
 
     if (message.size() % MATRIX_SIZE != 0) {
